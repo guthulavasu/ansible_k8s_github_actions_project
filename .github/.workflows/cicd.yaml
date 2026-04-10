@@ -1,0 +1,20 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+# permissions:
+#   contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    # env:
+    #   REGISTRY: docker.io
+    #   IMAGE_NAME: guthulavasuu/k8s_ansible
+
+    steps:
+      # === Checkout Code ===
+      - name: Checkout Code
+        uses: actions/checkout@v4
