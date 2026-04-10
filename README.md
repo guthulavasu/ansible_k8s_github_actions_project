@@ -17,7 +17,7 @@ This repository implements a **complete CI/CD pipeline** for deploying a contain
 * **Update Kubernetes Deployment Manifest in GitHub repo** → `git commit` & `push` with `GITHUB_TOKEN`
 * **K8s Deployment using Ansible** → `ansible-playbook` step (runner must have kube access)
 
----
+---accessssss
 
 ## 📂 Repository Structure
 
