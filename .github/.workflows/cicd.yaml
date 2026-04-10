@@ -18,3 +18,7 @@ jobs:
       # === Checkout Code ===
       - name: Checkout Code
         uses: actions/checkout@v4
+      - name: BuildJAR
+           run: |
+           cd Application
+           mvn clean package -DskipTests
